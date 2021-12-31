@@ -1,0 +1,214 @@
+body{
+   padding: 0;
+   margin: 0;
+}
+#header-infos{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    background: rgb(236, 235, 235);
+}
+#top-options{
+    background-image: url("assets/img/poolimg.jpg");
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+     background-size: cover;
+}
+#top-section img{
+    filter: brightness(45%);
+    width: 100%; 
+    z-index: -1;
+    object-fit: cover;
+}
+#top-links{
+    position:absolute;
+    top: 16%;
+}
+#top-links ul li{
+    position: relative;
+    list-style: none;
+    float: left;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family:'Noto Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+#top-links ul li a{    
+    display: block;
+    color: whitesmoke;
+}
+#hamburger{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    
+}
+#desc{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1; 
+}
+.text-box h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: 'Archivo', sans-serif; 
+    letter-spacing: 2px;   
+}
+
+.upper-text p,
+.lower-text p{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-weight: 400;
+    opacity: 0;
+}
+.upper-text p{
+    position: relative;
+    top: -100px;
+    animation: downStair 2s ease-in-out forwards; 
+}
+.lower-text p{
+    position: relative;
+    top: 100px;
+    animation: upStair 2s ease-in-out forwards; 
+}
+/*
+media small
+*/
+@media only screen and (min-width: 576px){
+    .text-box h1{
+        font-size: 2rem;
+        font-weight: 600;
+        color: whitesmoke;
+        text-transform: uppercase;
+        font-family: 'Archivo', sans-serif; 
+        letter-spacing: 2px;   
+    }
+    .upper-text p,
+    .lower-text p{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-weight: 400;
+    opacity: 0;
+    }
+    .t-btn{
+        display: none;
+    }
+    .threee-lines{
+        display: block;
+    }
+    
+  }
+@media only screen and (min-width: 768px) {
+    .text-box h1{
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: whitesmoke;
+        text-transform: uppercase;
+        font-family: 'Archivo', sans-serif; 
+        letter-spacing: 2px;   
+    }
+    .upper-text p,
+    .lower-text p{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-weight: 400;
+    opacity: 0;
+    }
+    
+
+}
+@media only screen and (min-width: 992px) {
+    .text-box h1{
+        font-size: 3rem;
+        font-weight: 600;
+        color: whitesmoke;
+        text-transform: uppercase;
+        font-family: 'Archivo', sans-serif; 
+        letter-spacing: 2px;   
+    }
+    .upper-text p,
+    .lower-text p{
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-weight: 400;
+    opacity: 0;
+    }
+    #desc{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1; 
+    }
+    
+  }
+  @media only screen and (min-width: 1200px) {
+    .text-box h1{
+        font-size: 3rem;
+        font-weight: 600;
+        color: whitesmoke;
+        text-transform: uppercase;
+        font-family: 'Archivo', sans-serif; 
+        letter-spacing: 2px;   
+    }
+    .upper-text p,
+    .lower-text p{
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-weight: 400;
+    opacity: 0;
+    }
+    #desc{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 35%;
+        transform: translateY(-50%);
+        z-index: 1; 
+    }
+    
+  }
+  
+
+
+
+@keyframes Popup {
+    to{
+        opacity: 1;
+    }
+}
+@keyframes downStair {
+    
+    to{
+        top:0px;
+        opacity: 1;
+    }
+}
+@keyframes upStair {
+    to{
+        top:0px;
+        opacity: 1;
+    }
+}
+
