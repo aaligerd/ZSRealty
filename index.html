@@ -117,17 +117,14 @@
     <div class="container-fluid" style="background-color: #f2f2f2;">
         <div class="container">
             <div class="row align-items-center py-2" id="tab-box" style="text-transform: uppercase;">
-                <div class="col col-sm-3 text-center tabhover">
+                <div class="col col-xl-4 col-md-4 col text-center tabhover">
                     <a href="#" style="color: rgb(20, 20, 20);">Residential</a>
                 </div>
-                <div class="col col-sm-3 text-center tabhover">
+                <div class="col col-xl-4 col-md-4 col text-center tabhover">
                     <a href="#">Commercial</a>
                 </div>
-                <div class="col col-sm-3 text-center tabhover">
+                <div id="landTab" class="col col-xl-4 col-md-4 text-center tabhover">
                     <a href="#">Land</a>
-                </div>
-                <div class="col col-sm-3 text-center tabhover">
-                    <a href="#">Investment</a>
                 </div>
             </div>
         </div>
@@ -141,27 +138,36 @@
             <div class="row my-2">
                 <div class="col-xxl-2 col-xl-4 col-lg-6 my-2">
                     <div class="card" style="width:100%;">
-                        <img class="card-img-top" src="assets/img/latest-news/news-bg-1.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="assets/img/buildingimg1.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">Site Name</p>
+                            <div class="card-text">
+                                <p>Project Name</p>
+                                <p>Project Description</p> 
+                            </div>
                             <input type="text" name="projectsitename" value="projectsitename" style="display: none;">
                         </div>
                     </div>
                 </div>
                 <div class="col-xxl-2 col-xl-4 col-lg-6 my-2">
                     <div class="card" style="width: 100%;">
-                        <img class="card-img-top" src="assets/img/latest-news/news-bg-1.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="assets/img/buildingimg1.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">Site Name</p>
+                            <div class="card-text">
+                                <p>Project Name</p>
+                                <p>Project Description</p> 
+                            </div>
                             <input type="text" name="projectsitename" value="projectsitename" style="display: none;">
                         </div>
                     </div>
                 </div>
                 <div class="col-xxl-2 col-xl-4 col-lg-6 my-2">
                     <div class="card" style="width: 100%;">
-                        <img class="card-img-top" src="assets/img/latest-news/news-bg-1.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="assets/img/buildingimg1.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">Site Name</p>
+                            <div class="card-text">
+                                <p>Project Name</p>
+                                <p>Project Description</p> 
+                            </div>
                             <input type="text" name="projectsitename" value="projectsitename" style="display: none;">
                         </div>
                     </div>
@@ -235,11 +241,12 @@
             <div class="container">
                 <p class="text-center" id="customer-words">Customer reviews</p>
                 <div class="review-section">
-                    <div class="review1">
+                    <div class="review1" id="firstReview">
                         <img src="assets/img/avaters/avatar2.png" width="130px" class="img-round" alt="" srcset="">
                         <h4 class="text-center">Jhon Doe</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, similique quia. Animi
-                            porro nulla voluptatem magni a accusamus debitis. Recusandae.</p>
+                        <p id="reviewPara1">Lorem ipsum dolor sit amet consectetur adipisicing elit.    <a href="#customer-words" onclick="showMore(this)" onsubmit="false">Show More</a> </p>
+                        
+                           
                     </div>
                     <div class="review2">
                         <img src="assets/img/avaters/avatar2.png" width="130px" class="img-round" alt="" srcset="">
@@ -261,14 +268,12 @@
     <div class="container-fluid py-5" style="background-color: #f2f2f2;">
         <div class="container px-5" id="section-about">
             <div id="about-title">
-                <p class="text-center">ABOUT</p>
+                <p class="text-center">WHY US?</p>
             </div>
             <div id="about-desc">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum, accusantium
-                    doloremque quaerat dolorum culpa blanditiis sit reiciendis non consequuntur minima odit sed, quidem,
-                    dolores maiores debitis reprehenderit iure rerum omnis optio? Aspernatur perferendis nemo iure harum
-                    dolorem quibusdam cupiditate dignissimos in, non laboriosam, accusamus recusandae voluptatum ullam
-                    debitis veritatis?</p>
+                <p>To research and shortlist by experts <br>
+
+                    Our dedicated experts will call you to understand your exact requirement and will offer you the properties which suit to your requirement and matching options</p>
             </div>
         </div>
         <div class="container text-center mt-4">
@@ -331,7 +336,6 @@
                         <li>Residential</li>
                         <li>Commercial</li>
                         <li>Land</li>
-                        <li>Investment</li>
                     </ul>
                 </div>
                 <div class="footer-item6">

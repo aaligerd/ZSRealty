@@ -48,3 +48,20 @@ function submitContact()
     console.log(user); 
     console.log("Submitted2");
 }
+function showMore(){
+    var para1=`Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, similique quia. Animi
+    porro nulla voluptatem magni a accusamus debitis. Recusandae.   <a href="#customer-words" onclick="showLess()" onsubmit="false">ShowLess</a>`;
+    var review1=document.getElementById("reviewPara1");
+    var review1Box=document.getElementById("firstReview");
+    review1.innerHTML=para1;
+    review1Box.style.height="250px";
+    console.log("Show more");
+}
+function showLess(){
+    var para2=`Lorem ipsum dolor sit amet consectetur adipisicing elit.    <a href="#customer-words" onclick="showMore()" onsubmit="false">Show More</a> `;
+    var review1=document.getElementById("reviewPara1");
+    review1.innerHTML=para2;
+    var review1Box=document.getElementById("firstReview");
+    review1Box.style.height="216px";
+    console.log("Show Less");
+}
