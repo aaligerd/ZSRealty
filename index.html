@@ -75,7 +75,7 @@
         </div>
         <div class="top-hero" style="padding: 0;margin: 0; width:100%;position: relative;">
             <img src="assets/img/poolimg.jpg" style="filter: brightness(50%);" alt="" srcset="">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="hero-section">
                     <p id="word-hero">your trust our moto</p>
                 </div>
@@ -235,35 +235,73 @@
             </a>
         </div>
     </div>
-    <!-- customer reviews -->
-    <section>
-        <div class="container-fluid my-4">
-            <div class="container">
-                <p class="text-center" id="customer-words">Customer reviews</p>
-                <div class="review-section">
-                    <div class="review1" id="firstReview">
-                        <img src="assets/img/avaters/avatar2.png" width="130px" class="img-round" alt="" srcset="">
-                        <h4 class="text-center">Jhon Doe</h4>
-                        <p id="reviewPara1">Lorem ipsum dolor sit amet consectetur adipisicing elit.    <a href="#customer-words" onclick="showMore(this)" onsubmit="false">Show More</a> </p>
-                        
-                           
+    <!-- customer review -->
+    <div class="container mt-5">
+        <p class="text-center" id="allreviews">Customer reviews</p>
+        <div id="reviewcarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#reviewcarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#reviewcarousel" data-slide-to="1"></li>
+                <li data-target="#reviewcarousel" data-slide-to="2"></li>
+                <li data-target="#reviewcarousel" data-slide-to="3"></li>
+                <li data-target="#reviewcarousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active py-5">
+                    <div id="review1">
+                        <img src="assets/img/avaters/avatar2.png"  class="customerImg" alt="">
+                        <div>
+                            <p class="text-center"id="cname">customer name</p>
+                            <p class="writtenreveiw">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab earum fugit dolorum est culpa labore laboriosam sed vitae accusamus obcaecati!</p>
+                        </div>
                     </div>
-                    <div class="review2">
-                        <img src="assets/img/avaters/avatar2.png" width="130px" class="img-round" alt="" srcset="">
-                        <h4 class="text-center">Jhon Doe</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, similique quia. Animi
-                            porro nulla voluptatem magni a accusamus debitis. Recusandae.</p>
+                    
+                </div>
+                <div class="carousel-item py-5">
+                    <div id="review1">
+                        <img src="assets/img/avaters/avatar2.png"  class="customerImg"  alt="">
+                        <div>
+                            <p class="text-center" id="cname">customer name</p>
+                            <p  class="writtenreveiw">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab earum fugit dolorum est culpa labore laboriosam sed vitae accusamus obcaecati!</p>
+                        </div>
                     </div>
-                    <div class="review3">
-                        <img src="assets/img/avaters/avatar2.png" width="130px" class="img-round" alt="" srcset="">
-                        <h4 class="text-center">Jhon Doe</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, similique quia. Animi
-                            porro nulla voluptatem magni a accusamus debitis. Recusandae.</p>
+                </div>
+                <div class="carousel-item py-5">
+                    <div id="review1">
+                        <img src="assets/img/avaters/avatar2.png"  class="customerImg"  alt="">
+                        <div>
+                            <p class="cname text-center" id="cname">customer name</p>
+                            <p  class="writtenreveiw">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab earum fugit dolorum est culpa labore laboriosam sed vitae accusamus obcaecati!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item py-5">
+                    <div id="review1">
+                        <img src="assets/img/avaters/avatar2.png"  class="customerImg"   alt="">
+                        <div>
+                            <p class="cname text-center" id="cname">customer name</p>
+                            <p  class="writtenreveiw">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab earum fugit dolorum est culpa labore laboriosam sed vitae accusamus obcaecati!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item py-5">
+                    <div id="review1">
+                        <img src="assets/img/avaters/avatar2.png"  class="customerImg"  alt="">
+                        <div>
+                            <p class="cname text-center" id="cname">customer name</p>
+                            <p  class="writtenreveiw">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab earum fugit dolorum est culpa labore laboriosam sed vitae accusamus obcaecati!</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <a href="#reviewcarousel" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#reviewcarousel" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
         </div>
-    </section>
+    </div>
     <!-- about us -->
     <div class="container-fluid py-5" style="background-color: #f2f2f2;">
         <div class="container px-5" id="section-about">
@@ -316,7 +354,7 @@
     </div>
     <!-- footer -->
     <footer>
-        <div class="container-fluid" style="background-color: rgb(23, 21, 100);">
+        <div class="container-fluid" style="background-image: linear-gradient(to bottom,rgb(10, 15, 90), rgb(7, 11, 65))">
             <div class="footer-section">
                 <div class="footer-items1">
                     <p>ZSRealty</p>
