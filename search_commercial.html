@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/"> -->
-
     <!-- title -->
-    <title>ZSRealty - Contact Us</title>
-
+    <title>ZSRealty - Search</title>
     <!-- favicon -->
     <link rel="shortcut icon" type="image/png" href="assets/img/favicon2.png">
     <!-- google font -->
@@ -44,8 +41,10 @@
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style1.css">
+    
 </head>
 <body>
+    <!--topImg-->
     <div class="container-fluid">
         <div class="row py-3 low575" id="top-infos">
             <div class="col-xl-2 col-md-4 col-sm-3  text-center">
@@ -73,7 +72,7 @@
 
         </div>
         <div class="top-hero" style="padding: 0;margin: 0; width:100%;position: relative;">
-            <img src="assets/img/poolimg.jpg" style="filter: brightness(50%);" alt="" srcset="">
+            <img src="assets/img/commercial-plot.jpg" height="400px" style="filter: brightness(50%);" alt="" srcset="">
             <div class="container-fluid">
                 <div class="hero-section">
                     <p id="word-hero">your trust our moto</p>
@@ -83,7 +82,7 @@
         <div class="top-menu">
             <ul id="main-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="search.html">Search</a></li>
+                <li><a href="search_commercial.html">Search</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
@@ -95,57 +94,162 @@
         </div>
         <div class="main-slider-menu-non-visible" id="mainmenu">
             <ul>
-                <li class="text-center"><a href="index.html">Home</a></li>
+                <li class="text-center"><a href="#">Home</a></li>
                 <li class="text-center"><a href="search.html">Search</a></li>
-                <li class="text-center"><a href="contact.html">Contact</a></li>
+                <li class="text-center"><a href="#contact-section">Contact</a></li>
                 <li class="text-center"><a href="about.html">About</a></li>
             </ul>
         </div>
         <div class="side-bar" id="side-bar">
             <ul>
-                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">HOME</a></li>
                 <li><a href="search.html">Search</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="#aboutBg">ABOUT</a></li>
+                <li><a href="#contact-section">CONTACT</a></li>
                 <li><a href="#">BOOK APPOINTMENT</a></li>
                 <li><a href="#">LOGIN</a></li>
             </ul>
         </div>
     </div>
-
-    <div class="container-fluid my-5">
-        <div class="container text-center pb-5">
-            <p style="font-size: 2rem;font-family: 'Josefin Sans', sans-serif;
-            font-weight: bold;">CONTACT</p>
-        </div>
+    <!--middle tabs-->
+    <div class="container-fluid" style="background-color: #f2f2f2;">
         <div class="container">
-            <div class="section-contact" id="contact-section">
-                <form action="">
-                    <div class="form-inputs">
-                        <div id="input1">
-                            <label for="customername">Name</label>
-                            <input type="text" id="customername" required>
-                        </div>
-                        <div id="input2">
-                            <label for="customeremail">Email</label>
-                            <input type="email" id="customeremail" required>
-                        </div>
-                        <div id="input3">
-                            <label for="customerphn">Phone Number</label>
-                            <input type="number" id="customerphn" required>
-                        </div>
-                        <div id="input4">
-                            <textarea name="" rows="4" cols="50" placeholder="Your Query....." id="querytxt" required></textarea>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-end my-3">
-                        <input type="submit" value="Submit" class="btn btn-dark" onclick="submitContact()">
-                    </div>
-                </form>
+            <div class="row align-items-center py-2" id="tab-box" style="text-transform: uppercase;">
+                <div class="col col-xl-4 col-md-4 col text-center  tabhover">
+                    <a href="search_residential.html">Residential</a>
+                </div>
+                <div class="col col-xl-4 col-md-4 col text-center tabhover">
+                    <a href="#" style="color: rgb(20, 20, 20);">Commercial</a>
+                </div>
+                <div id="landTab" class="col col-xl-4 col-md-4 text-center tabhover">
+                    <a href="#">Land</a>
+                </div>
             </div>
         </div>
     </div>
+    <!--search bar-->
+    <div class="container-fluid py-4">
+        <div class="container">
+            <form action="">
+                <div class="search-section">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search by location,project name ">
+                    </div>
+                    <div class="search-button">
+                        <button class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 
+    <!-- top projects -->
+    <div class="container mt-3">
+        <!-- <div class="text-center my-2">
+            <p style="font-size: 1.5rem;font-weight: bold;">TOP PROJECTS</p>
+        </div> -->
+        <div class="container">
+            <div class="row my-2">
+                <div class="col-xxl-2 col-xl-4 col-lg-6 my-2">
+                    <div class="card" style="width:100%;">
+                        <img class="card-img-top" src="assets/img/buildingimg1.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="card-text">
+                                <p>Project Name</p>
+                                <p>Project Description</p> 
+                            </div>
+                            <input type="text" name="projectsitename" value="projectsitename" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-2 col-xl-4 col-lg-6 my-2">
+                    <div class="card" style="width: 100%;">
+                        <img class="card-img-top" src="assets/img/buildingimg1.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="card-text">
+                                <p>Project Name</p>
+                                <p>Project Description</p> 
+                            </div>
+                            <input type="text" name="projectsitename" value="projectsitename" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-2 col-xl-4 col-lg-6 my-2">
+                    <div class="card" style="width: 100%;">
+                        <img class="card-img-top" src="assets/img/buildingimg1.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="card-text">
+                                <p>Project Name</p>
+                                <p>Project Description</p> 
+                            </div>
+                            <input type="text" name="projectsitename" value="projectsitename" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- project carousel slider -->
+    <div class="container-fluid mt-5">
+        <div id="imgcarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#imgcarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#imgcarousel" data-slide-to="1"></li>
+                <li data-target="#imgcarousel" data-slide-to="2"></li>
+                <li data-target="#imgcarousel" data-slide-to="3"></li>
+                <li data-target="#imgcarousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/merlin2.jpg" class="imgBrigthness" alt="">
+                    <div class="carousel-caption">
+                        <h3>Project Name</h3>
+                        <p>Project Description</p>
+                        <input type="text" name="projectname" value="Project Name" style="display: none;">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/merlin2.jpg" class="imgBrigthness" alt="">
+                    <div class="carousel-caption">
+                        <h3>Project Name</h3>
+                        <p>Project Description</p>
+                        <input type="text" name="projectname" value="Project Name" style="display: none;">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/merlin2.jpg" class="imgBrigthness" alt="">
+                    <div class="carousel-caption">
+                        <h3>Project Name</h3>
+                        <p>Project Description</p>
+                        <input type="text" name="projectname" value="Project Name" style="display: none;">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/merlin2.jpg" class="imgBrigthness" alt="">
+                    <div class="carousel-caption">
+                        <h3>Project Name</h3>
+                        <p>Project Description</p>
+                        <input type="text" name="projectname" value="Project Name" style="display: none;">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/merlin2.jpg" class="imgBrigthness" style="filter:brightness(70%)" alt="">
+                    <div class="carousel-caption">
+                        <h3>Project Name</h3>
+                        <p>Project Description</p>
+                        <input type="text" name="projectname" value="Project Name" style="display: none;">
+                    </div>
+                </div>
+            </div>
+            <a href="#imgcarousel" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#imgcarousel" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <!--footer-->
     <footer>
         <div class="container-fluid" style="background-image: linear-gradient(to bottom,rgb(10, 15, 90), rgb(7, 11, 65))">
             <div class="footer-section">
@@ -154,10 +258,10 @@
                 </div>
                <div class="footer-items2" id="linkdecoration">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Search</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">About</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="search_commercial.html">Search</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="">Login</a></li>
                     </ul>
                 </div>
@@ -217,6 +321,7 @@
             </div>
         </div>
     </footer>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="

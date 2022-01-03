@@ -234,7 +234,7 @@ html,body{
     font-family: 'Lato', sans-serif;
 }
 #tab-box  a{
-    color: var(--dark-font-color);
+    color: rgb(80, 80, 80);
 }
 #tab-box  a:hover{
     
@@ -569,6 +569,32 @@ input[type=number] {
     color: rgb(190, 190, 190);
 }
 
+/*search commercial page*/
+.search-section{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr;
+}
+.search-box{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    height: 100%;
+}
+.search-box input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+
+}
+.search-button{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    justify-self: center;
+}
+
+
+
 /*
 media quries
 */
@@ -643,11 +669,11 @@ media quries
         display:inline;
         position:relative;top: 5%; left: 35%;
     }
-    #tab-box{
+    /* #tab-box{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(2,1fr);
-    }
+    } */
     #top-btns{
         display: none;
     }
